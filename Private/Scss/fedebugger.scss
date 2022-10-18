@@ -1,0 +1,70 @@
+/**
+ * @author @NoelClick
+ * @copyright 2022 by Noel Kayabasli
+ */
+* {
+    padding: 0;
+    margin: 0;
+}
+#frontendDebuggerButton {
+    background-color: rgba(33,37,41,1);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 6px 4px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+    z-index: 999
+}
+#frontendDebuggerOffcanvas {
+    background-color: rgba(33,37,41,1);
+    color: #fff;
+    padding: 0 20px;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    height: 0;
+    width: 100%;
+    overflow: auto;
+    transition: height .5s;
+    box-sizing: border-box;
+    z-index: 9999;
+    &.show {
+	height: 100%;
+	padding: 20px;
+    }
+    > .offcanvas-header {
+	height: 50px;
+	border-bottom: 3px solid #fff;
+	> #frontendDebuggerOffcanvasLabel {
+	    font-size: 20px;
+	    margin: 8px 0;
+	    float: left;
+	}
+	> button {
+	    padding: 6px 4px;
+	    background-color: #fff;
+	    color: rgba(33,37,41,1);
+	    border-radius: 4px;
+	    cursor: pointer;
+	    float: right;
+	}
+    }
+    .offcanvas-resizer {
+        user-select: none;
+        cursor: ns-resize;
+        height: 10px;
+        width: 100%;
+    }
+    .offcanvas-resizer{
+        background-color: rgba(255,255,255,1);
+    }
+    /*&.light .bg-light .offcanvas-resizer{
+        background-color: rgba(33,35,40,1);
+    }*/
+    .offcanvas-body {
+        height: 100%;
+    }
+}

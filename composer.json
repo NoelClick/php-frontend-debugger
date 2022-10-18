@@ -1,0 +1,31 @@
+{
+    "name": "noelclick/php-frontend-debugger",
+    "type": "library",
+    "description": "Lightweight frontend debugger and exception handler for PHP.",
+    "keywords": [
+        "PHP",
+        "Exception handler",
+        "Frontend debugger",
+        "php-frontend-debugger",
+        "NoelClick"
+    ],
+    "homepage": "https://github.com/NoelClick/php-frontend-debugger",
+    "version": "v1.0.0",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Noel Kayabasli",
+            "email": "dev@noel.click",
+            "role": "Developer",
+            "homepage": "https://www.noel.click/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NoelClick\\PhpFrontendDebugger\\": "App/"
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    }
+}
